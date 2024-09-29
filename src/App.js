@@ -2,7 +2,7 @@
 import './App.css';
 import Accordian from './component/Accordian';
 import Navbar from './component/Navbar';
-// import Textform from './component/Textform';
+import Textform from './component/Textform';
 
 function App() {
   return (
@@ -10,7 +10,7 @@ function App() {
      <Navbar/>
      <div className="container">
 
-     {/* <Textform heading="Change your text below"/> */}
+     <Textform heading="Change your text below"/>
      <Accordian heading="My Accordian"/>
      </div>
     </>
