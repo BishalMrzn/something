@@ -9,9 +9,12 @@ function App() {
   const togglebtn=()=>{
     if(mode==='dark'){
     setMode('light')
+    document.body.style.backgroundColor='white'
   }
 else{
+  
   setMode('dark')
+  document.body.style.backgroundColor='#000023'
 }}
   const [mode,setMode]=useState('dark')
   return (
@@ -19,7 +22,7 @@ else{
      <Navbar mode={mode} togglebtn={togglebtn}/>
      <div className="container">
 
-     <Textform heading="Change your text below"/>
+     <Textform heading="Change your text below" mode={mode}/>
      {/* <Accordian heading="My Accordian"/> */}
      </div>
     </>
