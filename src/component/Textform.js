@@ -4,15 +4,18 @@ export default function Textform(props) {
   const handleSpace=()=>{
     const newText=text.split(/[ ]+/)
     setText(newText.join(" "))
+    props.showAlert("Removed Space","success")
   }
  
   const handleDownCLick=()=>{
     const newText=text.toLowerCase();
     setText(newText);
+    props.showAlert("LowerCase was clicked","success")
   }
   const handleUpCLick=()=>{
     const newText=text.toUpperCase();
     setText(newText);
+    props.showAlert("UpperCAse Was clicked","success")
   }
   const handleOnChange=(event)=>{
     setText(event.target.value);
